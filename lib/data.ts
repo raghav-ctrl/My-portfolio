@@ -1,20 +1,18 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'manivenu16@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi Raghvendra Rahul, I have shared my GitHub link.',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    oldPortfolio: '',
+    upworkProfile: '',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/raghav-ctrl' },
+    { name: 'linkedin', url: 'https://in.linkedin.com/in/raghavendra-rahul-1b3b40283' },
 ];
 
 export const MY_STACK = {
@@ -102,7 +100,7 @@ export const MY_STACK = {
             icon: '/logo/docker.svg',
         },
         {
-            name: 'AWS',
+            name: 'AWS (S3, EC2, API Gateway, DynamoDB, Textract)',
             icon: '/logo/aws.png',
         },
     ],
@@ -110,61 +108,15 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'MTI Electronics',
-        slug: 'mti-electronics',
-        liveUrl: 'https://mti-electronics.vercel.app/',
-        year: 2025,
-        description: `
-      A complete agency portfolio platform built for MTI Electronics to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
-        role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
-      `,
-        techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
-        ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
-    },
-    {
         title: 'Epikcart',
         slug: 'epikcart',
+        year: 2023,
+        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
+        role: `As the frontend developer in a team of five, I: <br/>
+        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
+        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
+        - Integrated multi-language support with React i18n, including RTL handling.<br/>
+        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
         techStack: [
             'React',
             'Redux',
@@ -183,126 +135,93 @@ export const PROJECTS: IProject[] = [
             '/projects/images/epikcart-4.png',
             '/projects/images/epikcart-5.png',
         ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
     },
     {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
+        title: 'AI Resume Screener',
+        slug: 'ai-resume-screener',
+        year: 2025,
         description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
-    },
-    {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
+            'A static website to upload resumes (PDF/DOC) and process them using AWS services like S3, Textract, DynamoDB, and API Gateway to extract and analyze key information for screening. (Not hosted)',
+        role: 'Designed and built the solution architecture, implemented resume upload and processing pipeline using AWS services.',
+        techStack: ['AWS S3', 'AWS Textract', 'DynamoDB', 'API Gateway', 'Static Website'],
         thumbnail: '/projects/thumbnail/devLinks.jpg',
         longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+        images: [],
+        slug: 'ai-resume-screener',
+    },
+    {
+        title: 'JR Events Portfolio',
+        slug: 'jr-events-portfolio',
+        year: 2024,
+        description:
+            'A portfolio website for a balloon and flower decoration business to showcase event designs and services. (Not hosted)',
+        role: 'Built static pages and galleries highlighting different event decoration categories.',
+        techStack: ['HTML', 'CSS', 'JavaScript', 'Static Website'],
+        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
+        longThumbnail: '/projects/long/consulting-finance.jpg',
+        images: [],
+        slug: 'jr-events-portfolio',
+    },
+    {
+        title: 'Budget Rooms Finder',
+        slug: 'budget-rooms',
+        year: 2025,
+        description:
+            'A static website concept to list budget rooms and small rental houses for middle-class and low-income families, addressing the lack of online listings for small rentals. (Not hosted)',
+        role: 'Designed information architecture and listing layout tailored for quick discovery of affordable rentals.',
+        techStack: ['HTML', 'CSS', 'JavaScript', 'Static Website'],
+        thumbnail: '/projects/thumbnail/property-pro.jpg',
+        longThumbnail: '/projects/long/property-pro.jpg',
+        images: [],
+        slug: 'budget-rooms',
+    },
+    {
+        title: 'IoT Portable Water Cooler & Heater',
+        slug: 'iot-water-cooler-heater',
+        year: 2024,
+        description:
+            'An IoT-based system that cools or heats water based on ambient room temperature using Peltier module, heat sink, thermistor/DHT11, and Arduino Uno. Potential use in industries, data centers, and servers. (Prototype; not hosted)',
+        role: 'Built the hardware prototype and control logic, calibrated temperature thresholds and control.',
+        techStack: ['Arduino Uno', 'Peltier Module', 'Heat Sink', 'DHT11', 'Thermistor'],
+        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
+        longThumbnail: '/projects/long/resume-roaster.jpg',
+        images: [],
+        slug: 'iot-water-cooler-heater',
+    },
+    {
+        title: 'AI Waste Segregation Bin',
+        slug: 'ai-waste-segregation-bin',
+        year: 2024,
+        description:
+            'A smart bin that classifies waste types such as metal, wet, dry, and plastic using AI-based image classification, aimed for use in restaurants and remote areas. (Prototype; not hosted)',
+        role: 'Developed dataset and model pipeline for classification; designed bin workflow.',
+        techStack: ['Computer Vision', 'Embedded', 'Arduino/RPi (concept)'],
+        thumbnail: '/projects/thumbnail/mti-electronics.webp',
+        longThumbnail: '/projects/long/mti-electronics.webp',
+        images: [],
+        slug: 'ai-waste-segregation-bin',
     },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'AI & Cloud Virtual Intern',
+        company: 'IBM',
+        duration: 'Jun 2025 - Aug 2025',
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        title: 'AWS re/Start Intern (Cloud/SRE)',
+        company: 'Tech Mahindra Smart Academy',
+        duration: 'Dec 2024 - Apr 2025',
     },
     {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
+        title: 'Marketing & Operations Intern',
+        company: 'American Brew Crafts',
+        duration: 'Aug 2024 - Dec 2024',
     },
     {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'Frontend Developer Intern',
+        company: 'Lead Hector',
+        duration: 'Jun 2023 - Aug 2023',
     },
 ];

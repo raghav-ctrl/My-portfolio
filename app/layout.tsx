@@ -29,8 +29,8 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Tajmirul Islam',
-    description: 'Personal portfolio of Tajmirul Islam',
+    title: 'Portfolio - T. Raghavendra Rahul',
+    description: 'Personal portfolio of T. Raghavendra Rahul',
 };
 
 export default function RootLayout({

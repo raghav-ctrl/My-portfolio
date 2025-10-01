@@ -48,46 +48,41 @@ const Banner = () => {
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
                         Hi! I&apos;m{' '}
                         <span className="font-medium text-foreground">
-                            Tajmirul
+                            Raghavendra Rahul
                         </span>
-                        . A creative Frontend Developer with 3+ years of
-                        experience in building high-performance, scalable, and
-                        responsive web solutions.
+                        . A recent ECM graduate (2025) passionate about Frontend
+                        Development, UI design, and AWS cloud services.
                     </p>
                     <Button
                         as="link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href={GENERAL_INFO.upworkProfile}
+                        href={`mailto:${GENERAL_INFO.email}?subject=${encodeURIComponent(GENERAL_INFO.emailSubject)}`}
                         variant="primary"
                         className="mt-9 banner-button slide-up-and-fade"
                     >
-                        Hire Me
+                        Contact Me
                     </Button>
                 </div>
 
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            3+
+                            8.5
                         </h5>
-                        <p className="text-muted-foreground">
-                            Years of Experience
-                        </p>
+                        <p className="text-muted-foreground">CGPA</p>
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            7+
+                            4
                         </h5>
-                        <p className="text-muted-foreground">
-                            Completed Projects
-                        </p>
+                        <p className="text-muted-foreground">Internships</p>
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            10K+
+                            2025
                         </h5>
-                        <p className="text-muted-foreground">Hours Worked</p>
+                        <p className="text-muted-foreground">Graduate Batch</p>
                     </div>
                 </div>
             </div>
